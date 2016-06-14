@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\FootBall">
+      <UniqueIdentifier>{53cce004-ef4a-477f-b634-662635c61d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\FootBall">
+      <UniqueIdentifier>{a453387a-ee76-4c47-adc7-163882f23855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Tetris">
+      <UniqueIdentifier>{3b2eff82-22ca-4bf0-a728-f310a1331c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Tetris">
+      <UniqueIdentifier>{a6d153c0-6d38-49d5-803c-1b6b426ef154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Tank">
+      <UniqueIdentifier>{a877fc9f-fe9c-4e42-8275-f0a187bc8ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Tank">
+      <UniqueIdentifier>{f05bfdc7-1aec-44f7-8ebd-58c9f602e3f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Screen.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\Bullet.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\Enemy.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\Object.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\Tank.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\TankGame.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetris\Block.cpp">
+      <Filter>소스 파일\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Tetris\tetris.cpp">
+      <Filter>소스 파일\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\Ball.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\Effect.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\FootBall.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\GoalPost.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\Player.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="FootBall\Stage.cpp">
+      <Filter>소스 파일\FootBall</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\PlayerTank.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\TankStage.cpp">
+      <Filter>소스 파일\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Screen.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\Bullet.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\Enemy.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\Object.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\Tank.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\TankGame.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetris\Block.h">
+      <Filter>헤더 파일\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetris\tetris.h">
+      <Filter>헤더 파일\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\Ball.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\Effect.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\FootBall.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\GoalPost.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\Player.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="FootBall\Stage.h">
+      <Filter>헤더 파일\FootBall</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\PlayerTank.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\TankStage.h">
+      <Filter>헤더 파일\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseGame" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAACAAAAAAABAAAAQAAAAAAAAAKBACABAAEAA=</HashCode>
+      <FileName>BaseGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAAABAIAAAAQAAAAAAIACIBACARBQEIA=</HashCode>
+      <FileName>GameManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Screen" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEACAAAABABAAABAACAAgAAAAAAAAQQAgAAAEAAAA=</HashCode>
+      <FileName>Screen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ball" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAgIIBEAIIAAAAQAAAEAAACABACAIA=</HashCode>
+      <FileName>FootBall\Ball.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Effect" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCgAAgAgAAAAAAAAAQAIAAAAAAAEAAAAAABAAAAA=</HashCode>
+      <FileName>FootBall\Effect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootBall" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAICICACAIAAgAAUAAAAgAAIiEAAOBALANAAAAA=</HashCode>
+      <FileName>FootBall\FootBall.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoalPost" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgABAABAAAIAQACIAACAAAAAQBCACAFABQAQ=</HashCode>
+      <FileName>FootBall\GoalPost.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEACAAAAAAAAAAAAAIAAAEAAwAgAGACARAAIDA=</HashCode>
+      <FileName>FootBall\Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stage" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAggAAABAAIIAAAgAQAAAAAEAAQAgCABAEAAA=</HashCode>
+      <FileName>FootBall\Stage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Block" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAABCYAEGpAAAIAAAQQAQAgkEBCCAUESQAEAIAU=</HashCode>
+      <FileName>Tetris\Block.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tetris" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACYAgCQBAAgCAhEACAIAAAAQIAAADSAAIBAWABhABQY=</HashCode>
+      <FileName>Tetris\tetris.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAIAAAgAAAAAAAAAAAAAAAgAgAAAAgAAQAAA=</HashCode>
+      <FileName>Tank\Bullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyTank" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAQAAAICBAwAAAAAAAABQAAAEAAAAAAASIAAAAAA=</HashCode>
+      <FileName>Tank\Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Object::DIRECT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Tank\Object.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Object::OBJECT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Tank\Object.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAGAAQAAAYAAAgAgEAAAEAQAAAAACAAAYAIQQAAAAAw=</HashCode>
+      <FileName>Tank\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerTank" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAhAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Tank\PlayerTank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankStage" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEkgAAAAAACAIBAAAAAEhAIAgAUCAAAQAAiABABECA=</HashCode>
+      <FileName>Tank\TankStage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tank" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAwAAAIAAAgAAAAAAAAAAAAAEAAAAAFACAAAAAAQ=</HashCode>
+      <FileName>Tank\Tank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TankGame" Collapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IhQEAAAAIAAAAIEAQAAEAAGAAAIACBAAoBgCANgBAAA=</HashCode>
+      <FileName>Tank\TankGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="POS_XY" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Tank\TankStage.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ENEMY_TYPE" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAgAAAACAAAAAAAAAAAAAAAAAAAAAAAAQIAAAAAA=</HashCode>
+      <FileName>Tank\TankStage.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
