@@ -48,7 +48,7 @@ void GameManager::Update()
 				--m_select;
 			break;
 		case KEY_DOWN:
-			if( m_select < 3 )
+			if( m_select < m_gameCount )
 				++m_select;
 			break;
 		case KEY_ENTER:
@@ -90,61 +90,76 @@ void GameManager::Release()
 	for( int i = 0; i < 3; ++i )
 	{
 		delete m_game[i];
-		m_game[i] = nullptr;
 	}
-	delete *m_game;
-
-	*m_game = nullptr;
+	m_gameList.erase(m_game);// *m_game;
 }
 
 void GameManager::SelectGame()
 {
-	switch( m_select )
-	{
-	case 0 :
-	case 1 :
-	case 2 :
+	if( m_select != m_gameCount )
 		m_isPlay = true;
-		break;
-	case 3 :
+	else
 		m_exit = true;
-		break;
-	}
 }
 
 void GameManager::SelectScreenDraw()
 {
 	screen->SetColor( Screen::GRAY );
-	screen->ScreenPrint( 0, 0, "┏━━━━━━━━━━━━━━━┓" );
-	screen->ScreenPrint( 0, 1, "┃                              ┃" );
-	screen->ScreenPrint( 0, 2, "┃        1.TankGame            ┃  ↑↓ 로 게임 고르기" );
-	screen->ScreenPrint( 0, 3, "┃                              ┃" );
-	screen->ScreenPrint( 0, 4, "┃        2.Tetris              ┃  Enter 로 겜 시작" );
-	screen->ScreenPrint( 0, 5, "┃                              ┃" );
-	screen->ScreenPrint( 0, 6, "┃        3.FootBall            ┃" );
-	screen->ScreenPrint( 0, 7, "┃                              ┃" );
-	screen->ScreenPrint( 0, 8, "┃        4.Exit                ┃" );
-	screen->ScreenPrint( 0, 9, "┃                              ┃" );
-	screen->ScreenPrint( 0, 10, "┗━━━━━━━━━━━━━━━┛" );
+	char string[100]; 
+	int i;
+
+	for( i = 1; i <= m_gameCount; ++i )
+	{
+		sprintf_s( string, "        %d.%s            ", i, m_gameNameIter[i - 1] );
+		screen->ScreenPrint( 0, 2 * i, string );
+	}
+	sprintf_s( string, "        %d.Exit            ", i );
+	screen->ScreenPrint( 0, 2 * i, string );
+	//screen->ScreenPrint( 0, 0, "┏━━━━━━━━━━━━━━━┓" );
+	//screen->ScreenPrint( 0, 1, "┃                              ┃" );
+	//screen->ScreenPrint( 0, 2, "┃        1.TankGame            ┃  ↑↓ 로 게임 고르기" );
+	//screen->ScreenPrint( 0, 3, "┃                              ┃" );
+	//screen->ScreenPrint( 0, 4, "┃        2.Tetris              ┃  Enter 로 겜 시작" );
+	//screen->ScreenPrint( 0, 5, "┃                              ┃" );
+	//screen->ScreenPrint( 0, 6, "┃        3.FootBall            ┃" );
+	//screen->ScreenPrint( 0, 7, "┃                              ┃" );
+	//screen->ScreenPrint( 0, 8, "┃        4.Exit                ┃" );
+	//screen->ScreenPrint( 0, 9, "┃                              ┃" );
+	//screen->ScreenPrint( 0, 10, "┗━━━━━━━━━━━━━━━┛" );
 }
 
 void GameManager::SelectBoxDraw()
 {
-	screen->ScreenPrint( 8, 1 + m_select*2, "┏━━━━━━┓" );
-	screen->ScreenPrint( 8, 2 + m_select*2, "┃" );	screen->ScreenPrint( 22, 2 + m_select*2, "┃" );
-	screen->ScreenPrint( 8, 3 + m_select*2, "┗━━━━━━┛" );
+	screen->ScreenPrint( 6, 1 + m_select*2, "┏━━━━━━┓" );
+	screen->ScreenPrint( 6, 2 + m_select*2, "┃" );	screen->ScreenPrint( 20, 2 + m_select*2, "┃" );
+	screen->ScreenPrint( 6, 3 + m_select*2, "┗━━━━━━┛" );
 }
 
-void GameManager::ChangeGame()
+// 새 게임을 추가한다.
+void GameManager::AddGame( BaseGame* _newGame, char* _name )
 {
+	m_gameList.push_back( _newGame );
+	m_gameName.push_back( _name );
+	++m_gameCount;
 }
 
-GameManager::GameManager() : m_select( 0 ), m_exit( false ), m_isPlay( false )
+// 게임 만드는 회사, 게임이 추가되면 여기에 넣어주세요
+void GameManager::GameCompany()
+{
+	AddGame( new TankGame(), "TankGame" );
+	AddGame( new Tetris(), "Tetris" );
+	AddGame( new FootBall(), "FootBall" );
+	//AddGame( new TankGame(), "TankGame" );
+	//AddGame( new Tetris(), "Tetris" );
+	//AddGame( new FootBall(), "FootBall" );
+}
+
+GameManager::GameManager() : m_select( 0 ), m_gameCount( 0 ),m_exit( false ), m_isPlay( false )
 {
 	screen = Screen::Instance();
-	m_game[0] = new TankGame();
-	m_game[1] = new Tetris();
-	m_game[2] = new FootBall();
+	GameCompany();
+	m_game = m_gameList.begin();
+	m_gameNameIter = m_gameName.begin();
 }
 
 GameManager::~GameManager()
