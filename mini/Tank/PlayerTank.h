@@ -6,9 +6,9 @@
 class PlayerTank : public Tank
 {
 public :
-	virtual void Init() override;
-	virtual void Draw() override;
-	virtual bool IsCollision( Object* coll = nullptr ) override;
+	void Init() override;
+	void Draw() override;
+	bool IsCollision( Object* coll = nullptr ) override;
 
 	PlayerTank();
 };

@@ -11,11 +11,11 @@ class EnemyTank;
 class TankGame : public BaseGame
 {
 public :
-	virtual void Update() override;
-	virtual void Render() override;
-	virtual bool Exit() override;
-	virtual void Init() override;
-	virtual void Release() override;
+	void Update() override;
+	void Render() override;
+	bool Exit() override;
+	void Init() override;
+	void Release() override;
 
 	static int GetMap( int x, int y );				// 맵 정보를 받아온다.
 	static void SetMap( int x, int y, int map );	// 맵 수정
@@ -50,7 +50,7 @@ private :
 
 public :
 	TankGame();
-	virtual ~TankGame();
+	~TankGame() override;
 };
 
 template <typename T >

@@ -20,13 +20,13 @@ public :
 		RESULT		// 6 : 최종 결과 화면으로 출력하고 게임이 종료된다.
 	};
 
-	virtual void Update();
-	virtual void Render();
-	virtual bool Exit();
+	void Update() override;
+	void Render() override;
+	bool Exit() override;
 
 private :
-	virtual void Init();
-	virtual void Release();
+	void Init() override;
+	void Release() override;
 
 private:
 	// 화면 출력 함수들
